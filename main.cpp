@@ -1,31 +1,21 @@
 #include <iostream>
 
-// 2.1 — Introduction to functions
+// 2.2 — Function return values (value-returning functions)
 
-
-void doPrint()
+int getValueFromUser()
 {
-	std::cout << "In doPrint()\n";
-}
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
 
-void doB()
-{
-	std::cout << "In doB()\n";
-}
-
-void doA()
-{
-	std::cout << "Starting doA()\n";
-	doB();
-	std::cout << "Ending doA()\n";
+	return input;
 }
 
 int main()
 {
-	std::cout << "Starting main()\n";
-	doPrint();
-	doA();
-	std::cout << "Ending main()\n";
+	int num{ getValueFromUser() };
+
+	std::cout << num << "dounbled is: " << num * 2 << '\n';
 
 	return 0;
 }
