@@ -1,21 +1,16 @@
 #include <iostream>
 
-// 2.2 — Function return values (value-returning functions)
+// 2.3 — Void functions (non-value returning functions)
 
-int getValueFromUser()
+void printHi()
 {
-	std::cout << "Enter an integer: ";
-	int input{};
-	std::cin >> input;
-
-	return input;
+	std::cout << "HI" << '\n';
 }
 
 int main()
 {
-	int num{ getValueFromUser() };
 
-	std::cout << num << "dounbled is: " << num * 2 << '\n';
+	printHi();
 
 	return 0;
 }
