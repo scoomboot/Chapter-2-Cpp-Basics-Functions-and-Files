@@ -1,20 +1,11 @@
 #include <iostream>
 
-// 2.5 — Introduction to local scope
+// 2.6 — Why functions are useful, and how to use them effectively
 
-// x is not in scope anywhere in this function
-void doSomething()
-{
-    std::cout << "Hello!\n";
-}
+
 
 int main()
 {
-    // x can not be used here because it's not in scope yet
-
-    int x{ 0 }; // x enters scope here and can now be used within this function
-
-    doSomething();
 
     return 0;
-} // x goes out of scope here and can no longer be used
+}
