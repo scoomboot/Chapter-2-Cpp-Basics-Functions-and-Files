@@ -1,32 +1,20 @@
 #include <iostream>
 
-// 2.4 — Introduction to function parameters and arguments
+// 2.5 — Introduction to local scope
 
-/* 
-Write a complete program that reads an integer from the user,
-doubles it using the doubleNumber() function you wrote in the previous quiz question,
-and then prints the doubled value out to the console. 
-*/
-
-
-double getValue()
+// x is not in scope anywhere in this function
+void doSomething()
 {
-	std::cout << "Enter a number: ";
-	double num{};
-	std::cin >> num;
-
-	return num;
-}
-
-void doubleNumber(double num)
-{
-	std::cout << num * 2 << '\n';
+    std::cout << "Hello!\n";
 }
 
 int main()
 {
+    // x can not be used here because it's not in scope yet
 
-	doubleNumber(getValue());
+    int x{ 0 }; // x enters scope here and can now be used within this function
 
-	return 0;
-}
+    doSomething();
+
+    return 0;
+} // x goes out of scope here and can no longer be used
