@@ -1,6 +1,6 @@
 #include <iostream>
 
-// 2.6 — Why functions are useful, and how to use them effectively
+// 2.7 — Forward declarations and definitions
 
 
 
