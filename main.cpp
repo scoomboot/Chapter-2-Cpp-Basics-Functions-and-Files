@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-// 2.11 — Header files
+// 2.12 — Header guards
 
 
 int main()
