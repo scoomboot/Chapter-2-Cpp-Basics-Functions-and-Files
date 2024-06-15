@@ -1,8 +1,7 @@
 #include <iostream>
 
-// 2.9 — Naming collisions and an introduction to namespaces
+// 2.10 — Introduction to the preprocessor
 
-int add(int x, int y);
 
 int main()
 {
